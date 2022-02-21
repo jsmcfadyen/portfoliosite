@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import MainPage from '../../view/MainPage.js'
 const Header = ({}) => {
   return (
     <>
@@ -9,7 +8,7 @@ const Header = ({}) => {
           <div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item border border-light">
-                <a class="nav-link btn text-danger" aria-current="page" href="#">
+                <a class="nav-link btn" aria-current="page" href="#">
                   <Link to="/">Home</Link>
                 </a>
               </li>
