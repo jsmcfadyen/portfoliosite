@@ -3,24 +3,35 @@ import { Routes, Route, Link } from 'react-router-dom'
 import MainPage from '../../view/MainPage.js'
 const Header = ({}) => {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact Me</Link>
-          </li>
-          <li>
-            <Link to="/tools">Tools</Link>
-          </li>
-          <li>
-            <Link to="/art">Art / Generative Code</Link>
-          </li>
-        </ul>
+    <>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="mx-auto order-0"></div>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item border border-light">
+                <a class="nav-link btn text-danger" aria-current="page" href="#">
+                  <Link to="/">Home</Link>
+                </a>
+              </li>
+              <li class="nav-item border border-light">
+                <a class="nav-link btn" aria-current="page" href="#">
+                  <Link to="/art">Art / Generative Stuff</Link>
+                </a>
+              </li>
+              <li class="nav-item border border-light">
+                <a class="nav-link btn" aria-current="page" href="#">
+                  <Link to="/contact">Contact Me</Link>
+                </a>
+              </li>
+              <li class="nav-item border border-light">
+                <a class="nav-link btn" aria-current="page" href="#">
+                  <Link to="/tools">Tools</Link>
+                </a>
+              </li>
+            </ul>
+          </div>
       </nav>
-    </div>
+    </>
   )
 }
 export default Header
