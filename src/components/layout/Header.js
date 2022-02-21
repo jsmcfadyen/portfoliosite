@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 const Header = ({}) => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
           <div class="mx-auto order-0"></div>
           <div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
